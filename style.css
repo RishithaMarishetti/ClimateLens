@@ -240,3 +240,76 @@ h1:not(.dashboard-title) {
     box-shadow:
     0 0 15px rgba(56,189,248,0.5);
 }
+
+@media(max-width:768px){
+
+    .landing-content{
+
+        padding:20px;
+    }
+
+    .logo-box{
+
+        width:180px;
+        height:180px;
+    }
+
+    .logo-box img{
+
+        width:140px;
+    }
+
+    .landing-title{
+
+        font-size:52px;
+
+        text-align:center;
+    }
+
+    .dashboard-btn{
+
+        width:220px;
+
+        font-size:18px;
+    }
+
+    .search-box{
+
+        flex-direction:column;
+
+        gap:15px;
+    }
+
+    .search-box input{
+
+        width:100%;
+    }
+
+    .search-box button{
+
+        width:100%;
+    }
+
+    .weather-card{
+
+        width:100%;
+    }
+
+    .chart-container{
+
+        width:100%;
+    }
+
+    .dashboard-title{
+
+        font-size:38px;
+
+        text-align:center;
+    }
+
+    .mini-logo{
+
+        width:40px;
+    }
+
+}
