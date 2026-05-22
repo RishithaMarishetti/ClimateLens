@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ClimateLens</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1 class="dashboard-title">
+
+    <img src="logo.png" class="mini-logo">
+
+    <span class="white-text">
+        Climate
+    </span><span class="blue-text">
+        Lens
+    </span>
+
+</h1>
+
+    <div class="search-box">
+      <input type="text" id="cityInput" placeholder="Enter city name">
+      <button onclick="getWeather()">Search</button>
+    </div>
+
+    <div class="weather-card">
+      <h2 id="cityName">City</h2>
+
+      <div class="info">
+        <p id="loading"></p>
+        <p>☁ Condition: <span id="condition">--</span></p>
+        <p>🌡 Temperature: <span id="temp">--</span> °C</p>
+        <p>💧 Humidity: <span id="humidity">--</span>%</p>
+        <p>🌬 Wind Speed: <span id="wind">--</span> km/h</p>
+      </div>
+    </div>
+
+    <div class="chart-container">
+      <canvas id="weatherChart"></canvas>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
